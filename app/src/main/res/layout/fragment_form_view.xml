@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".formulario">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bitlabBackground">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="220dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="96dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/image_bitlab_logo"
+            android:contentDescription="@string/logo_bitlab" />
+
+        <TextView
+            android:id="@+id/txt_form"
+            android:layout_width="324dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="44dp"
+            android:text="@string/info"
+            android:fontFamily="@font/font_roboto"
+            android:textColor="@color/WHITE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="58dp"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/font_roboto"
+            android:text="@string/nombre_completo"
+            android:textColor="@color/WHITE"
+            app:layout_constraintBottom_toTopOf="@+id/input_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_form" />
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="325dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="271dp"
+            android:layout_marginEnd="43dp"
+            android:background="@drawable/input_radius"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/font_roboto"
+            android:text="@string/correo_electronico"
+            android:textColor="@color/WHITE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_name" />
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="325dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="43dp"
+            android:background="@drawable/input_radius"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_name"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/txt_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/font_roboto"
+            android:text="@string/numero_telefonico"
+            android:textColor="@color/WHITE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_email" />
+        <EditText
+            android:id="@+id/input_phone"
+            android:layout_width="325dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="43dp"
+            android:background="@drawable/input_radius"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_email"
+            tools:ignore="Autofill,LabelFor,TextFields" />
+
+        <TextView
+            android:id="@+id/txt_hownotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/font_roboto"
+            android:text="@string/howNotice"
+            android:textColor="@color/WHITE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_phone" />
+        <EditText
+            android:id="@+id/input_hownotice"
+            android:layout_width="325dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="43dp"
+            android:background="@drawable/input_radius"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_phone"
+            tools:ignore="Autofill,LabelFor" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="200dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="97dp"
+            android:layout_marginEnd="106dp"
+            android:text="@string/enviar"
+            android:textColor="@color/bitlabBackground"
+            android:background="@drawable/btn__radius"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_hownotice" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

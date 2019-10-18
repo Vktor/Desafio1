@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">exampleclass1part2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info">Nos encanta que quieras aplicar a nuestras becas, pero antes de todo necesitamos conocerte más.</string>
+    <string name="nombre_completo">Nombre completo:</string>
+    <string name="logo_bitlab">LOGGO BITLAB</string>
+    <string name="correo_electronico">Correo Electronico</string>
+    <string name="numero_telefonico">Numero Telefónico</string>
+    <string name="howNotice">Como te enteraste de Bitlab?</string>
+    <string name="enviar">ENVIAR</string>
+</resources>
