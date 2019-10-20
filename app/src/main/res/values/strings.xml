@@ -10,4 +10,14 @@
     <string name="numero_telefonico">Numero Telefónico</string>
     <string name="howNotice">Como te enteraste de Bitlab?</string>
     <string name="enviar">ENVIAR</string>
+    <string name="input_hint_name">Juan Perez</string>
+    <string name="input_hint_example">example@email.com</string>
+    <string name="msg_success">Tus datos han sido enviados con éxito</string>
+
+    <!--FROM SPINNER-->
+    <string-array name="form_spinner">
+        <item>Por redes sociales.</item>
+        <item>Un amigo me sugirió.</item>
+        <item>Otro.</item>
+    </string-array>
 </resources>

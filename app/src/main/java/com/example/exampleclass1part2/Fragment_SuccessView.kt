@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Adapter
+import android.widget.ArrayAdapter
+import kotlinx.android.synthetic.main.fragment_form_view.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,6 +32,9 @@ class SuccessView : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //spinner_hownotice.adapter = ArrayAdapter<String>(this.activity!!.baseContext, R.layout.spinner_item)
+       // var adapter = ArrayAdapter.createFromResource(activity!!.applicationContext,R.array.form_spinner, R.layout.spinner_item)
+       // spinner_hownotice.adapter
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)

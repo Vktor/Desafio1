@@ -41,54 +41,36 @@
 
         <TextView
             android:id="@+id/txt_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="43dp"
+            style="@style/style_label_input"
             android:layout_marginTop="58dp"
             android:layout_marginBottom="7dp"
-            android:fontFamily="@font/font_roboto"
             android:text="@string/nombre_completo"
-            android:textColor="@color/WHITE"
             app:layout_constraintBottom_toTopOf="@+id/input_name"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_form" />
 
         <EditText
             android:id="@+id/input_name"
-            android:layout_width="325dp"
-            android:layout_height="42dp"
-            android:layout_marginStart="43dp"
+            style="@style/style_input"
             android:layout_marginTop="271dp"
-            android:layout_marginEnd="43dp"
-            android:background="@drawable/input_radius"
-            android:ems="10"
+            android:hint="@string/input_hint_name"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="Autofill,LabelFor" />
+            android:importantForAutofill="no" />
 
         <TextView
             android:id="@+id/txt_email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="43dp"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/font_roboto"
+            style="@style/style_label_input"
             android:text="@string/correo_electronico"
-            android:textColor="@color/WHITE"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/input_name" />
         <EditText
             android:id="@+id/input_email"
-            android:layout_width="325dp"
-            android:layout_height="42dp"
-            android:layout_marginStart="43dp"
-            android:layout_marginTop="35dp"
-            android:layout_marginEnd="43dp"
-            android:background="@drawable/input_radius"
-            android:ems="10"
+            style="@style/style_input"
+            android:hint="@string/input_hint_example"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -99,24 +81,14 @@
 
         <TextView
             android:id="@+id/txt_phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="43dp"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/font_roboto"
+            style="@style/style_label_input"
             android:text="@string/numero_telefonico"
-            android:textColor="@color/WHITE"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/input_email" />
         <EditText
             android:id="@+id/input_phone"
-            android:layout_width="325dp"
-            android:layout_height="42dp"
-            android:layout_marginStart="43dp"
-            android:layout_marginTop="35dp"
-            android:layout_marginEnd="43dp"
-            android:background="@drawable/input_radius"
-            android:ems="10"
+            style="@style/style_input"
+            android:hint="503 7000 0000"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -126,44 +98,33 @@
 
         <TextView
             android:id="@+id/txt_hownotice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="43dp"
-            android:layout_marginTop="12dp"
-            android:fontFamily="@font/font_roboto"
+            style="@style/style_label_input"
             android:text="@string/howNotice"
-            android:textColor="@color/WHITE"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/input_phone" />
-        <EditText
-            android:id="@+id/input_hownotice"
-            android:layout_width="325dp"
-            android:layout_height="42dp"
-            android:layout_marginStart="43dp"
-            android:layout_marginTop="35dp"
-            android:layout_marginEnd="43dp"
-            android:background="@drawable/input_radius"
-            android:ems="10"
+        <Spinner
+            android:id="@+id/spinner_hownotice"
+            style="@style/style_input"
+            android:entries="@array/form_spinner"
             android:inputType="textEmailAddress"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/input_phone"
-            tools:ignore="Autofill,LabelFor" />
+            app:layout_constraintTop_toBottomOf="@+id/input_phone" />
 
         <Button
             android:id="@+id/button"
-            android:layout_width="200dp"
+            android:layout_width="250dp"
             android:layout_height="42dp"
             android:layout_marginStart="105dp"
             android:layout_marginTop="97dp"
             android:layout_marginEnd="106dp"
             android:text="@string/enviar"
             android:textColor="@color/bitlabBackground"
-            android:background="@drawable/btn__radius"
+            android:background="@drawable/btn_radius"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/input_hownotice" />
+            app:layout_constraintTop_toBottomOf="@+id/spinner_hownotice" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
